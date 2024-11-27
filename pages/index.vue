@@ -28,15 +28,12 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="home">
-    <NuxtLayout>
-      <div v-for="(item, index) in form.bannerlist" :key="index">
-        {{ item.imgUrl }}
-      </div>
-
-      <!-- {{ systemStore.systemData.site }} -->
-    </NuxtLayout>
-  </div>
+  <NuxtLayout>
+    <div v-for="(item, index) in form.bannerlist" :key="index">
+      {{ item.imgUrl }}
+    </div>
+    <!-- {{ systemStore.systemData.site }} -->
+  </NuxtLayout>
 </template>
 
 <style lang="scss" scoped></style>
